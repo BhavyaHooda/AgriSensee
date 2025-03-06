@@ -76,16 +76,28 @@ body {
 }
 
 @media (max-width: 767px) {
-    body {
-        font-size: 14px;
+    .section, .content, .chart-container, .notification-list, .weather-stat-grid, .forecast-grid, .sensor-grid-modern, .action-buttons {
+        padding: 10px;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
-    .section-title {
+    
+    .stat-card, .sensor-card, .forecast-card, .notification-item, .data-card {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .section-header .section-title, .settings-title {
         font-size: 16px;
     }
-    .sensor-title {
-        font-size: 15px;
+
+    .btn, .chart-container, .forecast-icon, .notification-icon, .sensor-icon {
+        font-size: 12px;
     }
-    .stat-value {
+    
+    .notification-text, .data-value, .analytics-value {
         font-size: 14px;
     }
 }
@@ -1191,7 +1203,7 @@ body {
         min-width: 100px;
         margin: 0 8px;
     }
-    
+
     .nav-bar {
         padding: 14px 25px;
     }
@@ -1203,17 +1215,17 @@ body {
         bottom: 15px !important;
         max-width: 90%;
     }
-    
+
     .nav-item {
         margin: 0 3px;
         min-width: 55px;
         padding: 8px 5px;
     }
-    
+
     .nav-item i {
         font-size: 20px !important;
     }
-    
+
     .nav-item span {
         font-size: 10px !important;
     }
@@ -1224,7 +1236,7 @@ body {
         padding: 8px 5px;
         bottom: 10px !important;
     }
-    
+
     .nav-item {
         margin: 0 1px;
         padding: 5px 2px;
